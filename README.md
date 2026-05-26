@@ -5,7 +5,7 @@ This repository contains software used for my master's thesis at UIO: configurat
 
 The two first inputs are the tracking and telemetry files for the direct signal, denoted as "track_d\full" and "tele\d". Two of the parameters have to be written in the code manually: PRN and t_cut. The PRN is apriori known, but the t_cut is chosen based on the inspection of selected signal properties available in the tracking file:
 
-	* C/N0 of at least 25$dB-Hz is required for GPS lock, values above 35 dB-Hz are considered very good;
+	* C/N0 of at least 25 dB-Hz is required for GPS lock, values above 35 dB-Hz are considered very good;
 	* Carrier lock test - this parameter is set to 1 if carrier lock is achieved. Any data with values less than 1 means unstable tracking;
 	* Doppler frequency - this parameter can vary during the measurement time, but it is expected to be stable with little noise and located somewhere between -5 kHz and +5 kHz;
 	* Code frequency - this value is expected to be stable with little noise around 1.023 MHz.
